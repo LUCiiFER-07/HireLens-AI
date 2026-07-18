@@ -1332,8 +1332,8 @@ Sant Longowal Institute of Engineering and Technology (SLIET)
 ### Connect with Me
 
 - **GitHub:** https://github.com/LUCiiFER-07
-- **LinkedIn:** *(Add your LinkedIn Profile URL)*
-- **Email:** *(Add your Professional Email)*
+- **LinkedIn:** https://www.linkedin.com/in/pranjal-bhardwaj-pb072005 
+- **Email:** pranjalb091238@gmail.com
 
 ---
 
