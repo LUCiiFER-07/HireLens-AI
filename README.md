@@ -1,4 +1,7 @@
 # 🤖 HireLens AI
+
+### AI-powered Resume Screening and Candidate Ranking using Large Language Models
+
 # LLM Resume Screening System
 
 > An AI-powered resume screening and candidate ranking system that uses Large Language Models (LLMs) to extract structured information from job descriptions and resumes, evaluate candidate-job compatibility, and rank applicants based on their overall match score.
