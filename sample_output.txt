@@ -1,0 +1,25 @@
+Example output format:
+
+Processing: sample_resume.pdf
+Score: 82.0
+
+RANKED CANDIDATES
+1. John Doe - 82.0%
+2. Jane Smith - 67.0%
+
+TOP CANDIDATE
+Candidate: John Doe
+Score: 82.0%
+Experience requirement met: Yes
+Overall match percentage: 82.0%
+
+Matching skills:
+  - Instrumentation
+  - PLC
+  - Calibration
+
+Missing important skills:
+  - SCADA
+
+Final verdict:
+  - Strong fit for the role.

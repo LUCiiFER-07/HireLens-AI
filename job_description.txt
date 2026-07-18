@@ -1,0 +1,21 @@
+Description:
+Job Title: Junior Instrumentation & Control Engineer
+Department: Engineering / Operations & Maintenance
+Reports to: Senior Instrumentation Engineer / Project Manager
+
+Job Summary:
+The Junior Instrumentation & Control Engineer will assist in the design, installation, calibration, and maintenance of measurement and control systems. The successful candidate will work under the guidance of senior engineers to ensure that plant processes operate safely, efficiently, and in compliance with industry regulations.
+
+Key Responsibilities:
+- System Design Support: Assist in the preparation of technical documentation, including P&IDs, instrument lists, I/O lists, and wiring diagrams.
+- Installation & Commissioning: Support the on-site installation of field instruments and participate in commissioning/start-up of new systems.
+- Calibration & Testing: Perform routine calibration of pressure, temperature, flow, and level instruments. Assist in loop checks and functional testing of control loops.
+- Maintenance & Troubleshooting: Help troubleshoot hardware and software issues within PLC, DCS, and SCADA systems. Identify root causes for equipment malfunctions.
+- Data Analysis: Use CMMS or spreadsheets to log maintenance activities, track instrument failure rates, and update system parameters.
+- Safety & Compliance: Ensure all work is performed in accordance with safety standards and internal company policies.
+
+Required Qualifications:
+- Education: Bachelor’s degree in Instrumentation Engineering, Electronics and Communication Engineering, or a related field.
+- Technical Knowledge: Foundational understanding of control theory, PID loops, and field instrumentation.
+- Tools/Software: Basic familiarity with CAD software, Microsoft Office (Excel), and diagnostic tools.
+- Soft Skills: Strong analytical mindset, attention to detail, and effective communication skills for reporting technical issues.
