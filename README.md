@@ -1,439 +1,1432 @@
+<div align="center">
+
 # 🤖 HireLens AI
 
-### AI-powered Resume Screening and Candidate Ranking using Large Language Models
+### *AI-Powered Resume Screening & Candidate Ranking System using Large Language Models*
 
-# LLM Resume Screening System
+<p align="center">
 
-> An AI-powered resume screening and candidate ranking system that uses Large Language Models (LLMs) to extract structured information from job descriptions and resumes, evaluate candidate-job compatibility, and rank applicants based on their overall match score.
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-LLM-FF6B35?style=for-the-badge)
+![Pydantic](https://img.shields.io/badge/Pydantic-Structured_Output-E92063?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-## Project Banner
+</p>
 
-```text
-┌────────────────────────────────────┐
-            🤖HireLens AI                           
-      LLM Resume Screening System      
-└────────────────────────────────────┘
+<p align="center">
+
+![GitHub last commit](https://img.shields.io/github/last-commit/LUCiiFER-07/HireLens-AI?style=flat-square)
+![GitHub Repo stars](https://img.shields.io/github/stars/LUCiiFER-07/HireLens-AI?style=flat-square)
+![GitHub forks](https://img.shields.io/github/forks/LUCiiFER-07/HireLens-AI?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/LUCiiFER-07/HireLens-AI?style=flat-square)
+
+</p>
+
+---
+
+### 🚀 Intelligent Resume Screening Powered by LLMs
+
+**HireLens AI** automates the resume screening process by extracting structured candidate information from **PDF** and **DOCX** resumes, comparing it against a recruiter-provided job description, and generating an explainable candidate ranking using **Large Language Models**, **Groq API**, and **Pydantic**.
+
+---
+
+### 📌 Quick Links
+
+<a href="#-project-overview">Project Overview</a> •
+<a href="#-features">Features</a> •
+<a href="#-workflow">Workflow</a> •
+<a href="#-project-architecture">Architecture</a> •
+<a href="#-installation">Installation</a> •
+<a href="#-usage">Usage</a> •
+<a href="#-future-roadmap">Roadmap</a>
+
+</div>
+
+---
+
+# 📸 Project Banner
+
+> **Replace this section with your custom banner image once created.**
+
+<p align="center">
+
+<img src="assets/banner.png" width="100%" alt="HireLens AI Banner"/>
+
+</p>
+
+---
+
+# ⚡ Quick Facts
+
+| Property | Value |
+|-----------|-------|
+| **Project Name** | HireLens AI |
+| **Project Type** | AI Resume Screening System |
+| **Domain** | Artificial Intelligence / HR Tech |
+| **Programming Language** | Python |
+| **LLM Provider** | Groq API |
+| **Structured Output** | Pydantic |
+| **Supported Resume Formats** | PDF, DOCX |
+| **Output** | Candidate Ranking & Match Score |
+| **Architecture** | Modular Python |
+| **Status** | Active Development |
+
+---
+
+# 📚 Table of Contents
+
+- [📖 Project Overview](#-project-overview)
+- [🎯 Why HireLens AI?](#-why-hirelens-ai)
+- [✨ Features](#-features)
+- [🔄 Workflow](#-workflow)
+- [🏗 Project Architecture](#-project-architecture)
+- [📂 Folder Structure](#-folder-structure)
+- [🛠 Technologies Used](#-technologies-used)
+- [⚙ Installation](#-installation)
+- [🔐 Environment Variables](#-environment-variables)
+- [🚀 Usage](#-usage)
+- [📊 Sample Output](#-sample-output)
+- [🧠 Prompt Engineering](#-prompt-engineering)
+- [🎯 Matching Process](#-matching-process)
+- [📈 Candidate Ranking](#-candidate-ranking)
+- [🖼 Screenshots](#-screenshots)
+- [🛣 Future Roadmap](#-future-roadmap)
+- [⚠ Known Limitations](#-known-limitations)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+- [👨‍💻 Author](#-author)
+
+---
+
+# 📖 Project Overview
+
+Recruiters often spend significant time manually reviewing resumes to identify candidates who match a specific job role. This process becomes increasingly difficult when hiring for specialized positions or handling large numbers of applications.
+
+**HireLens AI** automates this workflow using **Large Language Models (LLMs)** to understand both job descriptions and resumes semantically rather than relying solely on keyword matching.
+
+The system:
+
+- Extracts structured information from job descriptions
+- Parses resumes from PDF and DOCX files
+- Converts unstructured text into validated JSON using Pydantic
+- Compares candidate profiles against job requirements
+- Generates explainable candidate scores
+- Produces recruiter-friendly rankings
+
+The project demonstrates practical applications of:
+
+- Large Language Models (LLMs)
+- Prompt Engineering
+- Structured Output Validation
+- Semantic Matching
+- Modular Python Development
+- AI-powered Decision Support Systems
+
+---
+
+# 🎯 Why HireLens AI?
+
+Traditional Applicant Tracking Systems (ATS) often rely on exact keyword matching, which may overlook qualified candidates whose resumes use different wording.
+
+HireLens AI uses LLM-powered semantic understanding to:
+
+✅ Understand skills and experience contextually
+
+✅ Extract structured information from resumes
+
+✅ Compare candidates against recruiter requirements
+
+✅ Generate explainable rankings
+
+✅ Reduce manual screening effort
+
+✅ Support faster hiring decisions
+
+---
+
+# ✨ Features
+
+## 📄 Resume Processing
+
+- Supports **PDF** resumes
+- Supports **DOCX** resumes
+- Automatic text extraction
+- Unified resume reading pipeline
+
+---
+
+## 🤖 LLM-Based Parsing
+
+- Job Description Parsing
+- Resume Parsing
+- Structured JSON Generation
+- Semantic Understanding
+- Context-aware Information Extraction
+
+---
+
+## 🧠 Structured Validation
+
+- Pydantic Models
+- Type Validation
+- Schema Enforcement
+- Reliable Output Formatting
+
+---
+
+## 🎯 Candidate Matching
+
+- Skill Matching
+- Experience Comparison
+- Education Matching
+- Semantic Evaluation
+- Candidate Scoring
+
+---
+
+## 📊 Ranking System
+
+- Candidate Ranking
+- Match Percentage
+- Explainable Results
+- Recruiter-friendly Summary
+
+---
+
+# 🔄 Workflow
+
+```mermaid
+flowchart TD
+
+A[Recruiter Provides Job Description]
+
+B[LLM Extracts Requirements]
+
+C[Resume Upload]
+
+D[PDF / DOCX Reader]
+
+E[Resume Parsing]
+
+F[Pydantic Validation]
+
+G[Structured Candidate Profile]
+
+H[Matching Engine]
+
+I[Score Generation]
+
+J[Candidate Ranking]
+
+K[Final Output]
+
+A --> B
+
+C --> D
+
+D --> E
+
+E --> F
+
+F --> G
+
+B --> H
+
+G --> H
+
+H --> I
+
+I --> J
+
+J --> K
 ```
-## 📑 Table of Contents
 
-- Overview
-- Features
-- Architecture
-- Workflow
-- Installation
-- Usage
-- Technologies
-- Matching Process
-- Output
-- Future Improvements
-- License
-  
-## Project Overview
+---
 
-Recruiters often spend a significant amount of time manually reviewing resumes to identify candidates who satisfy a role's technical and professional requirements. This process becomes increasingly challenging when hiring for specialized roles or when many applicants apply at once.
+# ⚙ Workflow Explanation
 
-The LLM Resume Screening System automates this workflow by using an LLM to understand both the job description and candidate resumes semantically rather than relying only on keyword matching. The system extracts structured information from both documents, validates it using Pydantic models, compares the candidate's qualifications against the job requirements, and generates an overall compatibility score along with a concise recruiter-style verdict.
+## Step 1 — Job Description Input
 
-## Project Objectives
+The recruiter provides a job description containing:
 
-- Automate resume screening using Large Language Models.
-- Convert unstructured job descriptions into structured JSON.
-- Parse resumes into validated structured data.
-- Compare candidate qualifications against job requirements.
-- Generate an overall candidate matching score.
-- Provide recruiters with a concise hiring summary.
-- Rank multiple candidates from best to worst match.
-
-## Why This Project?
-
-Manual resume screening has several limitations:
-
-- It is time-consuming for recruiters.
-- It can be inconsistent across candidates.
-- It is difficult to read resumes with different formats.
-- Traditional ATS systems depend heavily on exact keyword matches.
-- Important skills may be missed when wording differs.
-
-This project addresses those challenges by combining LLM-based semantic understanding with structured validation.
-
-## Intended Users
-
-This project is suitable for:
-
-- HR recruiters
-- Talent acquisition teams
-- Hiring managers
-- Recruitment startups
-- Students learning LLM application development
-- Developers exploring AI-powered automation
-
-## Features
-
-### Job Description Analysis
-
-- Extracts structured information from an unstructured job description.
-- Identifies role, required skills, preferred skills, minimum experience, education requirements, and responsibilities.
-- Validates the extracted data using a Pydantic schema.
-
-### Resume Parsing
-
-Supports resumes in:
-
-- PDF (.pdf)
-- Microsoft Word (.docx)
-
-Automatically extracts:
-
-- Candidate name
-- Email address
-- Phone number
-- LinkedIn profile
-- Career objective
+- Required Skills
+- Experience
 - Education
-- Technical skills
-- General skills
+- Responsibilities
+- Preferred Qualifications
+
+---
+
+## Step 2 — Requirement Extraction
+
+The LLM converts the job description into structured information.
+
+Example:
+
+```json
+{
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "SQL"
+  ],
+  "experience": "2 years",
+  "education": "Bachelor's Degree"
+}
+```
+
+---
+
+## Step 3 — Resume Reading
+
+The system reads:
+
+- PDF resumes
+- DOCX resumes
+
+using dedicated readers.
+
+---
+
+## Step 4 — Resume Parsing
+
+The LLM extracts:
+
+- Name
+- Skills
+- Experience
+- Education
 - Projects
 - Certifications
-- Achievements
-- Total experience
-- Professional experience
-- Internship experience
 
-### Semantic Resume Understanding
+and converts them into structured data.
 
-The LLM is instructed to understand the meaning of resume content rather than only rely on headings such as Experience or Skills.
+---
 
-### Structured Data Validation
+## Step 5 — Validation
 
-All extracted information is validated using strongly typed Pydantic models before being processed further.
+Pydantic validates:
 
-### Candidate Matching
+- Data Types
+- Missing Fields
+- JSON Structure
 
-Each parsed resume is compared against the structured job description. The evaluation includes:
+ensuring consistent output.
 
-- Matching skills
-- Missing skills
-- Experience evaluation
-- Overall match percentage
-- Final verdict
+---
 
-### Candidate Ranking
+## Step 6 — Matching
 
-After evaluating all resumes, the system sorts candidates by score and prints a ranked summary.
+The matching engine compares:
 
-### Multiple Resume Processing
+| Candidate Information | Job Requirement |
+|----------------------|-----------------|
+| Skills | Required Skills |
+| Experience | Minimum Experience |
+| Education | Required Education |
+| Projects | Relevant Work |
+| Certifications | Preferred Certifications |
 
-The application scans the RESUMES directory and processes every supported resume file.
+---
 
-## Workflow
+## Step 7 — Scoring
 
-```text
-Recruiter / Job Description
-            │
-            ▼
-LLM extracts structured requirements
-            │
-            ▼
-Pydantic validation
-            │
-            ▼
-Resume files (PDF / DOCX)
-            │
-            ▼
-Resume text extraction
-            │
-            ▼
-LLM resume parsing engine
-            │
-            ▼
-Structured resume JSON
-            │
-            ▼
-Candidate vs job matching
-            │
-            ▼
-Score + verdict + ranking
+Each candidate receives:
+
+- Match Percentage
+- Candidate Summary
+- Recruiter Verdict
+
+---
+
+## Step 8 — Ranking
+
+Candidates are ranked from:
+
+🥇 Best Match
+
+↓
+
+🥈 Strong Match
+
+↓
+
+🥉 Moderate Match
+
+↓
+
+❌ Weak Match
+
+---
+
+# 📌 Key Highlights
+
+✅ LLM-Powered Resume Parsing
+
+✅ Structured JSON Output
+
+✅ Pydantic Validation
+
+✅ Semantic Matching
+
+✅ Explainable Rankings
+
+✅ Modular Python Architecture
+
+✅ Practical AI Application
+
+
+# 🏗 Project Architecture
+
+HireLens AI follows a **modular architecture** where each component is responsible for a single task. This separation of concerns makes the project easier to understand, maintain, and extend.
+
+```mermaid
+flowchart LR
+
+A[Job Description]
+B[Resume PDF/DOCX]
+C[reader.py]
+D[parser.py]
+E[Pydantic Models]
+F[matcher.py]
+G[Ranked Candidates]
+H[Recruiter Output]
+
+A --> D
+B --> C
+C --> D
+D --> E
+E --> F
+F --> G
+G --> H
 ```
 
-## Project Architecture
+---
 
-The application is organized into several logical components:
+## 🧩 Architecture Overview
 
 | Module | Responsibility |
-|---|---|
-| [Resume_parser.py](Resume_parser.py) | Main entry point that orchestrates the full workflow. |
-| [models.py](models.py) | Defines the Pydantic schemas for jobs, resumes, experience, and match results. |
-| [reader.py](reader.py) | Reads job descriptions and resumes from text, PDF, or DOCX files. |
-| [parser.py](parser.py) | Sends prompts to the Groq-backed LLM and validates the structured responses. |
-| [matcher.py](matcher.py) | Formats and prints the final ranking summaries. |
-| [job_description.txt](job_description.txt) | Stores the default external job description. |
+|----------|----------------|
+| **main.py** | Entry point of the application. Coordinates the complete screening workflow. |
+| **reader.py** | Reads PDF and DOCX resumes and extracts raw text. |
+| **parser.py** | Uses the LLM to convert raw resume and job description text into structured information. |
+| **models.py** | Defines Pydantic models used to validate structured LLM responses. |
+| **matcher.py** | Compares candidate information with job requirements and calculates compatibility scores. |
+| **requirements.txt** | Lists project dependencies. |
+| **README.md** | Project documentation. |
 
-## Architecture Diagram
+---
 
-See [architecture_diagram.md](architecture_diagram.md).
+# 📂 Project Structure
 
-## Workflow Diagram
+```text
+HireLens-AI/
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── .env.example
+├── .gitignore
+│
+├── main.py
+├── reader.py
+├── parser.py
+├── matcher.py
+├── models.py
+│
+├── job_description.txt
+├── sample_output.txt
+│
+├── RESUMES/
+│   ├── sample_resume_1.pdf
+│   ├── sample_resume_2.pdf
+│   └── sample_resume_3.docx
+│
+├── assets/
+│   ├── banner.png
+│   ├── screenshots/
+│   ├── architecture.png
+│   └── workflow.png
+│
+└── docs/
+    ├── architecture.md
+    └── workflow.md
+```
 
-See [workflow_diagram.md](workflow_diagram.md).
+---
 
-## Technologies Used
+## 📁 Folder Description
+
+| Folder/File | Description |
+|--------------|-------------|
+| **main.py** | Starts the application and controls the workflow. |
+| **reader.py** | Handles reading PDF and DOCX resumes. |
+| **parser.py** | Extracts structured candidate and job information using an LLM. |
+| **matcher.py** | Performs candidate-job matching and scoring. |
+| **models.py** | Stores Pydantic schemas for structured validation. |
+| **job_description.txt** | Sample recruiter job description. |
+| **RESUMES/** | Sample resumes for testing the system. |
+| **assets/** | Banner, screenshots, diagrams, and repository images. |
+| **docs/** | Additional technical documentation and diagrams. |
+
+---
+
+# 🛠 Technology Stack
 
 | Technology | Purpose |
-|---|---|
-| Python | Core application language |
-| Groq API | LLM access for parsing and scoring |
-| GPT-OSS-120B | Model used for structured extraction and matching |
-| Pydantic | Schema definition and validation |
-| python-dotenv | Loads environment variables securely |
-| PyPDF | Extracts text from PDF resumes |
-| python-docx | Reads Microsoft Word resumes |
-| JSON | Stores structured outputs from the LLM |
-| Pathlib | Handles file and directory operations |
+|------------|---------|
+| **Python 3.12** | Core programming language |
+| **Groq API** | High-speed LLM inference |
+| **GPT-OSS Model** | Resume and job description understanding |
+| **Pydantic** | Structured output validation |
+| **PyPDF** | Reading PDF resumes |
+| **python-docx** | Reading DOCX resumes |
+| **python-dotenv** | Loading environment variables |
+| **JSON** | Structured data exchange |
+| **Pathlib** | Cross-platform file handling |
 
-## Installation
+---
 
-### 1. Clone the repository
+# ⚙ Installation
 
-```bash
-git clone <your-repo-url>
-cd week1/day5
-```
-
-### 2. Create a virtual environment
-
-#### Windows
+## 1️⃣ Clone the Repository
 
 ```bash
-python -m venv .venv
-.venv\Scripts\activate
+git clone https://github.com/LUCiiFER-07/HireLens-AI.git
+
+cd HireLens-AI
 ```
 
-#### macOS / Linux
+---
+
+## 2️⃣ Create a Virtual Environment
+
+### Windows
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+python -m venv venv
+
+venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
+
+---
+
+## 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure environment variables
+---
 
-Create a file named `.env` and add your Groq API key:
+## 4️⃣ Configure Environment Variables
 
-```env
-GROQ_API_KEY=your_groq_api_key
+Create a file named
+
+```text
+.env
 ```
 
-### 5. Add resume files
+Add your Groq API key
 
-Place candidate resumes inside the RESUMES folder.
+```env
+GROQ_API_KEY=your_groq_api_key_here
+```
 
-Supported formats:
+---
 
-- .pdf
-- .docx
-
-## Run the Application
-
-From the project folder, run:
+## 5️⃣ Run the Project
 
 ```bash
 python main.py
 ```
 
-You can also point the workflow to a different job description file:
+---
+
+# 🔐 Environment Variables
+
+HireLens AI uses environment variables to securely store API credentials.
+
+| Variable | Description |
+|-----------|-------------|
+| **GROQ_API_KEY** | API key used for accessing Groq LLM services |
+
+Example:
+
+```env
+GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+> **⚠️ Security Notice**
+>
+> Never commit your real `.env` file to GitHub.
+>
+> Instead, include only a `.env.example` file in the repository.
+
+---
+
+# 📦 Dependencies
+
+Install all required packages using:
 
 ```bash
-python Resume_parser.py --job-description job_description.txt --resume-folder RESUMES
+pip install -r requirements.txt
 ```
 
-## Environment Variables
+Core dependencies include:
 
-| Variable | Description | Required |
-|---|---|---|
-| GROQ_API_KEY | API key used to authenticate with the Groq API | Yes |
+- Groq
+- Pydantic
+- PyPDF
+- python-docx
+- python-dotenv
 
-## Folder Structure
+---
+
+# 📌 Configuration
+
+The application can be customized by modifying:
+
+- Groq Model Name
+- Temperature
+- Maximum Tokens
+- Resume Directory
+- Job Description File
+
+These settings are currently defined within the project source and can be centralized into a dedicated configuration module in future versions.
+
+# 🚀 Usage
+
+Once the project is configured, simply execute the application from the project root.
+
+```bash
+python main.py
+```
+
+The application will:
+
+1. Load the Job Description.
+2. Read all resumes from the `RESUMES/` directory.
+3. Parse the Job Description using the LLM.
+4. Parse each resume into structured data.
+5. Validate the extracted data using Pydantic.
+6. Compare every candidate with the job requirements.
+7. Calculate candidate scores.
+8. Rank all candidates.
+9. Display recruiter-friendly results.
+
+---
+
+# 🔄 Execution Pipeline
+
+```mermaid
+sequenceDiagram
+
+participant Recruiter
+participant Main
+participant Reader
+participant Parser
+participant Pydantic
+participant Matcher
+participant Output
+
+Recruiter->>Main: Run Application
+
+Main->>Reader: Read Resume Files
+
+Reader-->>Main: Resume Text
+
+Main->>Parser: Parse Resume
+
+Parser-->>Pydantic: Structured JSON
+
+Pydantic-->>Main: Validated Candidate
+
+Main->>Matcher: Compare Candidate
+
+Matcher-->>Main: Candidate Score
+
+Main-->>Output: Display Results
+```
+
+---
+
+# ⚙ Code Workflow
+
+The application follows a modular pipeline where every module performs one specific responsibility.
 
 ```text
-HireLens-AI/
-│
-├── 📄 README.md
-├── 📄 LICENSE
-├── 📄 requirements.txt
-├── 📄 .gitignore
-├── 📄 .env.example
-│
-├── 📂 src/
-│   ├── main.py                 # Application entry point
-│   ├── reader.py               # PDF & DOCX reader
-│   ├── parser.py               # Resume parser using LLM
-│   ├── matcher.py              # Resume matching engine
-│   ├── models.py               # Pydantic models
-│   └── config.py               # Model names & constants (recommended)
-│
-├── 📂 data/
-│   ├── job_description.txt
-│   │
-│   ├── sample_resumes/
-│   │   ├── sample_resume_1.pdf
-│   │   └── sample_resume_2.docx
-│   │
-│   └── sample_output.txt
-│
-├── 📂 assets/
-│   ├── banner.png
-│   ├── logo.png
-│   ├── architecture.png
-│   ├── workflow.png
-│   ├── demo.gif
-│   └── screenshots/
-│       ├── home.png
-│       ├── ranking.png
-│       └── output.png
-│
-├── 📂 docs/
-│   ├── architecture.md
-│   ├── workflow.md
-│   └── prompts.md              # Optional: document LLM prompts
-│
-└── 📂 tests/                   # Optional for future
-    └── test_reader.py
+main.py
+
+↓
+
+reader.py
+
+↓
+
+parser.py
+
+↓
+
+models.py
+
+↓
+
+matcher.py
+
+↓
+
+Final Ranking
 ```
 
-## Code Workflow
+---
 
-### read_pdf(file_path)
+# 📖 Module Documentation
 
-Reads text from a PDF resume by opening the file with PyPDF and extracting each page's content.
+## 🟦 main.py
 
-### read_docx(file_path)
+### Purpose
 
-Reads text from a Word resume by extracting paragraph and table content through python-docx.
+Acts as the main controller of the application.
 
-### read_resume(file_path)
+It coordinates every module and manages the complete resume-screening workflow.
 
-Chooses the correct reader based on the file extension.
+### Responsibilities
 
-### parse_resume(resume_text)
+- Loads the Job Description
+- Reads all resumes
+- Calls the parser
+- Validates responses
+- Invokes the matching engine
+- Displays ranked candidates
 
-Sends the resume content to the LLM to extract structured information into the Resume schema.
+---
 
-### final_score(job, resume)
+## 🟩 reader.py
 
-Compares the job description and parsed resume to produce a match score and detailed verdict.
+### Purpose
 
-## Data Models
+Responsible for extracting text from different resume formats.
 
-### JobDescription
+### Supported Formats
 
-Represents the structured job requirements extracted from the job description.
+- PDF
+- DOCX
 
-| Field | Description |
-|---|---|
-| role | Job title |
-| required_skills | Mandatory technical skills |
-| preferred_skills | Desirable skills |
-| minimum_experience | Minimum years of experience |
-| education_requirements | Required qualifications |
-| responsibilities | Main responsibilities |
+### Responsibilities
 
-### Experience
+- Detect resume type
+- Read document contents
+- Return clean text for parsing
 
-Represents one professional experience or internship entry.
+### Output
 
-### Resume
+Raw resume text.
 
-Represents the complete structured resume.
+---
 
-### MatchResult
+## 🟨 parser.py
 
-Represents the final evaluation generated by the LLM.
+### Purpose
 
-## LLM Prompts
+Converts unstructured resume text into structured candidate information using a Large Language Model.
 
-The project relies on prompt engineering to keep outputs structured and consistent.
+### Responsibilities
 
-- The system prompt instructs the model to act like a recruiter or resume parser.
-- The user prompt provides the actual job description or resume text.
-- Every request uses JSON-only responses so the output can be validated with Pydantic.
+- Parse Job Description
+- Parse Resume
+- Generate Structured JSON
+- Handle prompt creation
+- Process LLM responses
 
-## Matching Process
+### Output
 
-The matching engine evaluates each candidate by comparing the structured resume data against the structured job description. The LLM is prompted to provide:
+Validated candidate profile.
 
-- Matching skills
-- Missing important skills
-- Whether experience requirements are met
-- Overall match percentage
-- Final verdict
+---
 
-## Candidate Ranking
+## 🟥 matcher.py
 
-After all resumes are processed, the application sorts the results in descending order by score and prints both the highest- and lowest-ranked candidates.
+### Purpose
 
-## Example Output
+Compares candidate information against recruiter requirements.
 
-See [sample_output.txt](sample_output.txt) for an example of the terminal output.
+### Responsibilities
 
-## Requirements
+- Compare Skills
+- Compare Experience
+- Compare Education
+- Calculate Match Score
+- Generate Candidate Summary
 
-The project depends on the following packages:
+### Output
+
+Ranked candidate with compatibility score.
+
+---
+
+## 🟪 models.py
+
+### Purpose
+
+Defines all Pydantic models used for structured validation.
+
+### Responsibilities
+
+- Validate LLM output
+- Enforce JSON schema
+- Ensure data consistency
+- Prevent malformed responses
+
+---
+
+# 📊 Data Flow
+
+```mermaid
+flowchart LR
+
+Resume
+
+↓
+
+Text Extraction
+
+↓
+
+LLM Parsing
+
+↓
+
+Structured JSON
+
+↓
+
+Pydantic Validation
+
+↓
+
+Matching Engine
+
+↓
+
+Score
+
+↓
+
+Ranking
+```
+
+---
+
+# 📚 Core Functions
+
+## Resume Reading
+
+| Function | Description |
+|----------|-------------|
+| `read_pdf()` | Reads PDF resumes and extracts text |
+| `read_docx()` | Reads DOCX resumes and extracts text |
+| `read_resume()` | Automatically selects the appropriate reader |
+
+---
+
+## Parsing
+
+| Function | Description |
+|----------|-------------|
+| `parse_job_description()` | Extracts recruiter requirements |
+| `parse_resume()` | Converts resume into structured candidate information |
+
+---
+
+## Matching
+
+| Function | Description |
+|----------|-------------|
+| `match_candidate()` | Calculates compatibility score |
+| `rank_candidates()` | Sorts candidates based on scores |
+
+---
+
+# 🧩 Data Models
+
+The project uses **Pydantic** models to ensure every LLM response follows a predefined schema.
+
+Benefits include:
+
+- Type Safety
+- JSON Validation
+- Automatic Error Detection
+- Consistent Output
+- Reliable Parsing
+
+---
+
+# 🤖 LLM Integration
+
+HireLens AI leverages the **Groq API** to perform semantic understanding of resumes and job descriptions.
+
+The LLM is responsible for:
+
+- Extracting skills
+- Understanding work experience
+- Identifying education
+- Parsing projects
+- Detecting certifications
+- Producing structured JSON
+
+The application validates every response before using it for candidate matching.
+
+---
+
+# 🔒 Error Handling
+
+The system includes safeguards for common issues such as:
+
+- Unsupported file formats
+- Empty resumes
+- Missing fields
+- Invalid JSON responses
+- Validation failures
+- API communication errors
+
+These checks improve reliability and prevent malformed data from affecting candidate rankings.
+
+---
+
+# 📈 Performance Considerations
+
+Current implementation is designed for small to medium batches of resumes.
+
+Performance depends primarily on:
+
+- Number of resumes
+- Resume length
+- LLM response time
+- Network latency
+
+Because resume parsing relies on an external LLM, overall execution time scales with the number of candidates being processed.
+
+---
+
+# 💡 Design Principles
+
+HireLens AI is built around several software engineering principles:
+
+- Modular Architecture
+- Separation of Concerns
+- Reusable Components
+- Structured Data Validation
+- Explainable AI Outputs
+- Maintainable Code Organization
+
+# 🧠 Prompt Engineering
+
+HireLens AI leverages **Large Language Models (LLMs)** through the **Groq API** to transform unstructured resumes and job descriptions into structured, machine-readable information.
+
+Instead of relying on keyword matching, the system uses prompt engineering techniques to enable semantic understanding of candidate profiles.
+
+---
+
+## 🎯 Prompt Design Strategy
+
+The prompting workflow follows four major stages:
 
 ```text
-groq
-python-dotenv
-pydantic
-pypdf
-python-docx
+Raw Text
+
+↓
+
+Instruction Prompt
+
+↓
+
+Schema Definition
+
+↓
+
+LLM Response
+
+↓
+
+Pydantic Validation
+
+↓
+
+Structured Candidate Profile
 ```
 
-These are listed in [requirements.txt](requirements.txt).
+The prompts are carefully designed to encourage:
 
-## Future Improvements
+- Structured JSON responses
+- Consistent formatting
+- High extraction accuracy
+- Minimal hallucinations
+- Reliable downstream validation
 
-Possible next steps include:
+---
 
-- A Streamlit or FastAPI-based user interface
-- OCR support for scanned PDFs
-- Parallel resume processing
-- Retry logic for API rate limits
-- Database storage for candidate history
-- Unit and integration testing
+## 📄 Job Description Prompt
 
-## Known Limitations
+The Job Description prompt instructs the LLM to identify and organize recruiter requirements into structured fields.
 
-- Supports only PDF and DOCX resumes.
-- Requires a valid Groq API key.
-- Results depend on LLM responses, which may vary slightly.
-- The workflow is terminal-based and does not yet include a GUI.
+### Information Extracted
 
-## Contributing
+- Required Skills
+- Experience Requirements
+- Educational Qualifications
+- Preferred Skills
+- Responsibilities
+- Additional Notes
 
-Contributions are welcome. If you would like to improve the project:
+Example Output
+
+```json
+{
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "SQL"
+  ],
+  "experience": "2+ years",
+  "education": "Bachelor's Degree"
+}
+```
+
+---
+
+## 👤 Resume Parsing Prompt
+
+The Resume Parsing prompt extracts candidate information from PDF or DOCX resumes.
+
+### Information Extracted
+
+- Candidate Name
+- Technical Skills
+- Soft Skills
+- Work Experience
+- Education
+- Projects
+- Certifications
+- Tools & Technologies
+
+Example Output
+
+```json
+{
+  "name": "John Doe",
+  "skills": [
+    "Python",
+    "FastAPI",
+    "TensorFlow"
+  ],
+  "experience": 3,
+  "education": "B.Tech Computer Science"
+}
+```
+
+---
+
+## ✅ Structured Output Validation
+
+LLM responses are validated using **Pydantic** before being processed further.
+
+Validation ensures:
+
+- Correct JSON format
+- Required fields are present
+- Proper data types
+- Consistent schema
+- Reduced parsing errors
+
+This validation layer prevents malformed AI responses from affecting candidate ranking.
+
+---
+
+# 🎯 Matching Process
+
+After both the job description and candidate resumes have been converted into structured data, the matching engine evaluates how closely each candidate aligns with the job requirements.
+
+---
+
+## Matching Pipeline
+
+```mermaid
+flowchart TD
+
+A[Structured Job Description]
+
+B[Structured Resume]
+
+C[Skill Comparison]
+
+D[Experience Comparison]
+
+E[Education Comparison]
+
+F[Overall Compatibility Score]
+
+G[Candidate Ranking]
+
+A --> C
+B --> C
+
+A --> D
+B --> D
+
+A --> E
+B --> E
+
+C --> F
+D --> F
+E --> F
+
+F --> G
+```
+
+---
+
+## Evaluation Criteria
+
+The system compares multiple dimensions of a candidate profile.
+
+| Category | Purpose |
+|-----------|----------|
+| Skills | Compare required and possessed technical skills |
+| Experience | Evaluate years and relevance of experience |
+| Education | Verify educational qualifications |
+| Projects | Identify practical implementation experience |
+| Certifications | Consider additional qualifications |
+
+---
+
+# 📊 Candidate Ranking
+
+Every processed candidate receives a compatibility score based on how well their profile matches the job requirements.
+
+The ranking system enables recruiters to quickly identify the most suitable applicants.
+
+---
+
+## Ranking Workflow
+
+```text
+Candidate Profile
+
+↓
+
+Requirement Matching
+
+↓
+
+Compatibility Score
+
+↓
+
+Ranking
+
+↓
+
+Recruiter Summary
+```
+
+---
+
+## Candidate Categories
+
+| Match Score | Interpretation |
+|--------------|----------------|
+| 90–100% | Excellent Match |
+| 75–89% | Strong Match |
+| 60–74% | Moderate Match |
+| Below 60% | Weak Match |
+
+> **Note:** These score ranges are illustrative for documentation. The actual scoring depends on the implementation in `matcher.py`.
+
+---
+
+# 📋 Example Output
+
+The following example demonstrates the type of recruiter-friendly summary generated by the system.
+
+```text
+=================================================
+
+Candidate: John Doe
+
+Match Score: 92%
+
+Skills:
+✔ Python
+✔ Machine Learning
+✔ SQL
+
+Experience:
+✔ 3 Years
+
+Education:
+✔ Bachelor of Technology
+
+Projects:
+✔ Resume Screening System
+
+Overall Verdict:
+
+Excellent Match
+
+=================================================
+```
+
+---
+
+# 💡 Explainable AI
+
+One of the primary goals of HireLens AI is to provide **transparent** and **interpretable** hiring recommendations.
+
+Instead of producing only a numerical score, the system presents supporting information such as:
+
+- Extracted Skills
+- Experience Summary
+- Educational Background
+- Relevant Projects
+- Match Percentage
+- Overall Recommendation
+
+This enables recruiters to understand **why** a candidate received a particular ranking rather than relying on a black-box decision.
+
+---
+
+# 🎯 Design Philosophy
+
+HireLens AI is designed around three core principles:
+
+### 1️⃣ Reliability
+
+Every AI-generated response is validated before use.
+
+---
+
+### 2️⃣ Explainability
+
+Candidate rankings are supported with structured information instead of opaque scores.
+
+---
+
+### 3️⃣ Modularity
+
+Each stage of the workflow is isolated into independent modules, making the system easier to maintain, test, and extend.
+
+---
+
+# 🚀 Real-World Applications
+
+HireLens AI can be adapted for several recruitment and talent management scenarios.
+
+Examples include:
+
+- AI-powered Applicant Tracking Systems (ATS)
+- Enterprise HR Automation
+- Campus Recruitment
+- Resume Shortlisting
+- Talent Acquisition Platforms
+- Internal Candidate Evaluation
+- Recruitment Process Automation
+
+The modular architecture also makes it suitable for integration into larger HR technology ecosystems.
+
+# 🖼️ Screenshots
+
+Visual demonstrations make it easier to understand the project workflow and output.
+
+> **Note:** Replace the placeholder images below with actual screenshots from your project.
+
+---
+
+## 🏠 Application Overview
+
+<p align="center">
+  <img src="assets/screenshots/home.png" width="90%" alt="Application Overview">
+</p>
+
+---
+
+## 📄 Resume Parsing
+
+<p align="center">
+  <img src="assets/screenshots/parsing.png" width="90%" alt="Resume Parsing">
+</p>
+
+---
+
+## 📊 Candidate Ranking
+
+<p align="center">
+  <img src="assets/screenshots/ranking.png" width="90%" alt="Candidate Ranking">
+</p>
+
+---
+
+## ✅ Final Output
+
+<p align="center">
+  <img src="assets/screenshots/output.png" width="90%" alt="Final Output">
+</p>
+
+---
+
+# 🛣️ Future Roadmap
+
+The following features are planned for future releases.
+
+## Core Improvements
+
+- [x] Resume Parsing
+- [x] Job Description Parsing
+- [x] Candidate Ranking
+- [x] Pydantic Validation
+- [x] Modular Architecture
+
+---
+
+## Planned Features
+
+- [ ] Streamlit Web Interface
+- [ ] FastAPI REST API
+- [ ] Batch Resume Processing
+- [ ] OCR Support for Scanned Resumes
+- [ ] Semantic Vector Search
+- [ ] ATS Integration
+- [ ] PostgreSQL Database
+- [ ] Docker Support
+- [ ] Authentication
+- [ ] Unit Testing
+- [ ] GitHub Actions CI/CD
+- [ ] Performance Logging
+- [ ] Multi-language Resume Support
+- [ ] Recruiter Dashboard
+- [ ] Resume Analytics
+
+---
+
+# ⚠️ Known Limitations
+
+Current limitations of the project include:
+
+- Processing speed depends on LLM response time.
+- Internet connection is required to access the Groq API.
+- Only PDF and DOCX resume formats are supported.
+- Resume quality affects extraction accuracy.
+- Candidate ranking quality depends on the quality of the provided job description.
+- The system is designed for demonstration and educational purposes; production deployments may require additional validation and monitoring.
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome and appreciated.
+
+If you would like to improve this project:
 
 1. Fork the repository.
-2. Create a feature branch.
+2. Create a new feature branch.
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
 3. Commit your changes.
-4. Open a pull request.
 
-## License
+```bash
+git commit -m "Add your feature"
+```
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+4. Push the branch.
 
-## Author
+```bash
+git push origin feature/your-feature-name
+```
 
-Pranjal Bhardwaj
+5. Open a Pull Request.
 
-## Acknowledgements
+Please ensure that your contribution:
 
-This project makes use of open-source tools such as Python, Groq, Pydantic, PyPDF, python-docx, and python-dotenv.
+- Follows the existing coding style.
+- Includes appropriate documentation.
+- Maintains modular design.
+- Does not introduce breaking changes without explanation.
 
-## Support
+---
 
-If you found this project useful, feel free to share it or extend it further for your own recruitment workflow.
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+See the `LICENSE` file for more information.
+
+---
+
+# 👨‍💻 Author
+
+## Pranjal Bhardwaj
+
+**B.Tech – Instrumentation Engineering**
+
+Sant Longowal Institute of Engineering and Technology (SLIET)
+
+### Connect with Me
+
+- **GitHub:** https://github.com/LUCiiFER-07
+- **LinkedIn:** *(Add your LinkedIn Profile URL)*
+- **Email:** *(Add your Professional Email)*
+
+---
+
+# 🙏 Acknowledgements
+
+Special thanks to the open-source community and the developers of the technologies that made this project possible.
+
+- Python
+- Groq
+- Pydantic
+- PyPDF
+- python-docx
+- python-dotenv
+
+---
+
+# ⭐ Support the Project
+
+If you found this project useful:
+
+⭐ Star this repository
+
+🍴 Fork the repository
+
+🐛 Report issues
+
+💡 Suggest improvements
+
+Every contribution helps make HireLens AI better.
+
+---
+
+<div align="center">
+
+## 🚀 HireLens AI
+
+### Intelligent Resume Screening Powered by Large Language Models
+
+**Built with ❤️ using Python, Groq API, and Pydantic**
+
+⭐ **If you like this project, don't forget to star the repository!**
+
+</div>
