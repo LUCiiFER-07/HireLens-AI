@@ -7,8 +7,8 @@
 
 ```text
 ┌────────────────────────────────────┐
-             🤖 HireLens AI             
-       LLM Resume Screening System      
+           🤖 HireLens AI              
+      LLM Resume Screening System      
 └────────────────────────────────────┘
 ```
 
