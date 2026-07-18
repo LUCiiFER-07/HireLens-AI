@@ -2,7 +2,7 @@
 
 # 🤖 HireLens AI
 
-### *AI-Powered Resume Screening & Candidate Ranking System using Large Language Models*
+### *🚀 Automating AI-driven resume screening with structured LLM outputs and intelligent candidate ranking.*
 
 <p align="center">
 
@@ -20,6 +20,9 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/LUCiiFER-07/HireLens-AI?style=flat-square)
 ![GitHub forks](https://img.shields.io/github/forks/LUCiiFER-07/HireLens-AI?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues/LUCiiFER-07/HireLens-AI?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/LUCiiFER-07/HireLens-AI)
+![Top Language](https://img.shields.io/github/languages/top/LUCiiFER-07/HireLens-AI)
+![Last Commit](https://img.shields.io/github/last-commit/LUCiiFER-07/HireLens-AI)
 
 </p>
 
@@ -51,7 +54,7 @@
 
 <p align="center">
 
-<img src="assets/banner.png" width="100%" alt="HireLens AI Banner"/>
+<img src="C:\Users\pranj\padho-ai-engineer\week1\AI_Project\assets\banner.png" width="100%" alt="HireLens AI Banner"/>
 
 </p>
 
@@ -73,6 +76,17 @@
 | **Status** | Active Development |
 
 ---
+
+## 🚀 Project Highlights
+
+- 📄 PDF & DOCX Resume Support
+- 🤖 LLM-Powered Semantic Parsing
+- 🧠 Structured Output Validation with Pydantic
+- 🎯 Intelligent Candidate Matching
+- 📊 Recruiter-Friendly Ranking
+- 🏗 Modular Python Architecture
+
+---  
 
 # 📚 Table of Contents
 
@@ -794,38 +808,23 @@ Defines all Pydantic models used for structured validation.
 ```mermaid
 flowchart LR
 
-Resume
+A[Resume]
+B[Text Extraction]
+C[LLM Parsing]
+D[Structured JSON]
+E[Pydantic Validation]
+F[Matching Engine]
+G[Candidate Score]
+H[Candidate Ranking]
 
-↓
-
-Text Extraction
-
-↓
-
-LLM Parsing
-
-↓
-
-Structured JSON
-
-↓
-
-Pydantic Validation
-
-↓
-
-Matching Engine
-
-↓
-
-Score
-
-↓
-
-Ranking
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+F --> G
+G --> H
 ```
-
----
 
 # 📚 Core Functions
 
