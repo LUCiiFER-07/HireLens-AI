@@ -245,22 +245,49 @@ python Resume_parser.py --job-description job_description.txt --resume-folder RE
 ## Folder Structure
 
 ```text
-week1/day5/
-├── Resume_parser.py
-├── main.py
-├── models.py
-├── reader.py
-├── parser.py
-├── matcher.py
-├── job_description.txt
-├── requirements.txt
-├── README.md
-├── architecture_diagram.md
-├── workflow_diagram.md
-├── banner.txt
-├── sample_output.txt
-├── RESUMES/
-└── screenshots/
+HireLens-AI/
+│
+├── 📄 README.md
+├── 📄 LICENSE
+├── 📄 requirements.txt
+├── 📄 .gitignore
+├── 📄 .env.example
+│
+├── 📂 src/
+│   ├── main.py                 # Application entry point
+│   ├── reader.py               # PDF & DOCX reader
+│   ├── parser.py               # Resume parser using LLM
+│   ├── matcher.py              # Resume matching engine
+│   ├── models.py               # Pydantic models
+│   └── config.py               # Model names & constants (recommended)
+│
+├── 📂 data/
+│   ├── job_description.txt
+│   │
+│   ├── sample_resumes/
+│   │   ├── sample_resume_1.pdf
+│   │   └── sample_resume_2.docx
+│   │
+│   └── sample_output.txt
+│
+├── 📂 assets/
+│   ├── banner.png
+│   ├── logo.png
+│   ├── architecture.png
+│   ├── workflow.png
+│   ├── demo.gif
+│   └── screenshots/
+│       ├── home.png
+│       ├── ranking.png
+│       └── output.png
+│
+├── 📂 docs/
+│   ├── architecture.md
+│   ├── workflow.md
+│   └── prompts.md              # Optional: document LLM prompts
+│
+└── 📂 tests/                   # Optional for future
+    └── test_reader.py
 ```
 
 ## Code Workflow
