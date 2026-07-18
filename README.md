@@ -48,18 +48,6 @@
 
 ---
 
-# 📸 Project Banner
-
-> **Replace this section with your custom banner image once created.**
-
-<p align="center">
-
-<img src="C:\Users\pranj\padho-ai-engineer\week1\AI_Project\assets\banner.png" width="100%" alt="HireLens AI Banner"/>
-
-</p>
-
----
-
 # ⚡ Quick Facts
 
 | Property | Value |
