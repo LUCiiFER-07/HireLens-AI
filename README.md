@@ -11,7 +11,20 @@
       LLM Resume Screening System      
 └────────────────────────────────────┘
 ```
+## 📑 Table of Contents
 
+- Overview
+- Features
+- Architecture
+- Workflow
+- Installation
+- Usage
+- Technologies
+- Matching Process
+- Output
+- Future Improvements
+- License
+  
 ## Project Overview
 
 Recruiters often spend a significant amount of time manually reviewing resumes to identify candidates who satisfy a role's technical and professional requirements. This process becomes increasingly challenging when hiring for specialized roles or when many applicants apply at once.
